@@ -8,19 +8,4 @@ function login(){
   }
 }
 
-const parMumsLink = document.getElementById("parMumsLink");
-const sadarbibaListItem = document.querySelector('nav ul li.dropdown .dropdown-content a[href="sadarbiba.html"]').closest('li');
 
-if (sadarbibaListItem) {
-  sadarbibaListItem.style.display = 'none';
-}
-
-if (parMumsLink) {
-  parMumsLink.addEventListener('click', function(event) {
-    event.preventDefault();
-    if (sadarbibaListItem) {
-      sadarbibaListItem.style.display = 'block';
-    }
-  });
-  }
-}
